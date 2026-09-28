@@ -77,12 +77,12 @@ namespace dayLap06.Controllers
                     return View(member);
                 }
 
-                member.MemberID = Guid.NewGuid().ToString();
+            member.MemberID = Guid.NewGuid().ToString();
 
-                _listMember.Add(member);
+            _listMember.Add(member);
 
-                return RedirectToAction("Index");
-            }
+            return RedirectToAction("Index");
+        }
             catch
             {
                 return View();
